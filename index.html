@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrier Lookup</title>
+
+    <!-- Custom style  -->
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <!------------------------ wrapper  ------------------->
+    <main class="wrapper">
+      <!------------------------ sidebar  ------------------->
+      <nav class="sidebar">
+        <div id="closeMobileSidebar">
+          <div class="close"></div>
+        </div>
+        <div class="logo">
+          <img src="./assets/img/logo.svg" alt="Carrier Lookup logo" />
+        </div>
+        <ul class="sidebar-menu">
+          <li class="menu-item">
+            <div class="icon">
+              <img src="./assets/img/dashboard.svg" alt="Dashboard" />
+            </div>
+            <span class="text">Dashboard</span>
+          </li>
+          <li class="menu-item">
+            <div class="icon">
+              <img src="./assets/img/lookup.svg" alt="Lookup" />
+            </div>
+            <span class="text">Lookup</span>
+          </li>
+          <li class="menu-item">
+            <div class="icon">
+              <img src="./assets/img/files.svg" alt="Files" />
+            </div>
+            <span class="text">Files</span>
+          </li>
+          <li class="menu-item menuDropdown">
+            <div class="menuDropBtn">
+              <div class="icon">
+                <img src="./assets/img/logs.svg" alt="Logs" />
+              </div>
+              <span class="text">Logs</span>
+            </div>
+            <ul class="menuDropContent">
+              <li class="drop-item">
+                <div class="icon">
+                  <img
+                    src="./assets/img/single-lookup.svg"
+                    alt="Single/bulk lookup"
+                  />
+                </div>
+                <span class="text">Single/Bulk Lookup</span>
+              </li>
+              <li class="drop-item">
+                <div class="icon">
+                  <img src="./assets/img/daily-usages.svg" alt="Daily Usages" />
+                </div>
+                <span class="text">Daily Usages </span>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <div class="icon">
+              <img src="./assets/img/credit.svg" alt="Buy Credits" />
+            </div>
+            <span class="text">Buy Credits</span>
+          </li>
+          <li class="menu-item">
+            <div class="icon">
+              <img src="./assets/img/integrations.svg" alt="Integrations" />
+            </div>
+            <span class="text">Integrations</span>
+          </li>
+          <li class="menu-item active">
+            <div class="icon">
+              <img src="./assets/img/profile.svg" alt="My Profile" />
+            </div>
+            <span class="text">My Profile</span>
+          </li>
+        </ul>
+      </nav>
+      <!------------------------ content  ------------------->
+      <div class="content">
+        <nav class="navbar">
+          <div class="left" id="mobileNavbar">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <div class="right">
+            <div class="balance">Balance: <span>$125</span></div>
+            <div class="profile-wrapper">
+              <div class="profile">
+                <div class="img">
+                  <img src="./assets/img/profile.jpg" alt="Profile " />
+                </div>
+                <span class="text">Alexa Jui</span>
+                <img class="icon" src="./assets/img/arrow.svg" alt="arrow" />
+              </div>
+              <div class="dropdown">
+                <ul>
+                  <li>My Profile</li>
+                  <li>Add Fund</li>
+                  <li>API Documentation</li>
+                  <li>Log Out</li>
+                </ul>
+                <button class="logout-btn">
+                  <img src="./assets/img/logout.svg" alt="Logout icon" />
+                  Log Out
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="container">
+          <div class="card-container">
+            <div class="profile-card">
+              <div class="img">
+                <img src="./assets/img/profile.jpg" alt="Profile Image" />
+              </div>
+              <h4 class="name">Alexa Jui</h4>
+              <p class="address">
+                alexajui@gmail.com
+                <br />
+                +1 354 785 4125
+                <br />
+                3213 D Street, Columbus, USA
+              </p>
+            </div>
+            <div class="credit-container">
+              <h3>Your Credit Cards</h3>
+              <div class="credit-cards">
+                <div class="single-credit-card">
+                  <div class="icon">
+                    <img src="./assets/img/trash.svg" alt="Trash" />
+                  </div>
+                  <h2 class="title">Credit Card 1</h2>
+                  <p class="number">xxxxxxxxxxxx4684</p>
+                </div>
+                <div class="single-credit-card active">
+                  <div class="icon">
+                    <img src="./assets/img/trash.svg" alt="Trash" />
+                  </div>
+                  <h2 class="title">Credit Card 1</h2>
+                  <p class="number">xxxxxxxxxxxx4684</p>
+                </div>
+                <div class="single-credit-card">
+                  <div class="icon">
+                    <img src="./assets/img/trash.svg" alt="Trash" />
+                  </div>
+                  <h2 class="title">Credit Card 1</h2>
+                  <p class="number">xxxxxxxxxxxx4684</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!------------------------ Setting container ------------------->
+        <div class="settings">
+          <ul class="tabs">
+            <li data-tab-target="#updateProfile" class="tab">Update Profile</li>
+            <li data-tab-target="#changePassword" class="tab">
+              Change Password
+            </li>
+            <li data-tab-target="#emailNotification" class="active tab">
+              Email Notifications
+            </li>
+            <li data-tab-target="#autoRecharge" class="tab">
+              Auto Recharge Settings
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="updateProfile" data-tab-content>
+              <h1>updateProfile</h1>
+              <p>This is the updateProfile</p>
+            </div>
+            <div id="changePassword" data-tab-content>
+              <h1>changePassword</h1>
+              <p>Some information on changePassword</p>
+            </div>
+            <div id="emailNotification" data-tab-content class="active">
+              <ul class="list">
+                <li class="list-item">
+                  <label class="switch">
+                    <input type="checkbox" id="verificationNotify" checked />
+                    <span class="slider"></span>
+                  </label>
+                  <label for="verificationNotify">
+                    Notify me when list verification completes
+                  </label>
+                </li>
+                <li class="list-item">
+                  <label class="switch">
+                    <input type="checkbox" id="exportComplete" />
+                    <span class="slider"></span>
+                  </label>
+                  <label for="exportComplete">
+                    Notify me when list export completes
+                  </label>
+                </li>
+                <li class="list-item">
+                  <label class="switch">
+                    <input type="checkbox" id="expireNotify" checked />
+                    <span class="slider"></span>
+                  </label>
+                  <label for="expireNotify">
+                    Notify me when list verification result is about to expire
+                  </label>
+                </li>
+                <li
+                  class="list-item"
+                  style="border-top: 2px solid #f2f2f4; padding-top: 30px"
+                >
+                  <label class="switch">
+                    <input type="checkbox" id="credit-email" checked />
+                    <span class="slider"></span>
+                  </label>
+                  <label for="credit-email"> Receive Low Credits Email </label>
+                </li>
+
+                <li
+                  class="list-item"
+                  style="padding-bottom: 30px; border-bottom: 2px solid #f2f2f4"
+                >
+                  <div class="input-container">
+                    <div class="input-field">
+                      <label for="email">Send Email to <span>*</span></label>
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="alexajui@gmail.com"
+                      />
+                    </div>
+                    <div class="input-field">
+                      <label for="credit">
+                        When credits are less than <span>*</span>
+                      </label>
+                      <input
+                        type="number"
+                        name="credit"
+                        id="credit"
+                        value="50"
+                      />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <button class="save-button">Save Changes</button>
+            </div>
+            <div id="autoRecharge" data-tab-content>
+              <h1>autoRecharge</h1>
+              <p>autoRecharge is great.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- script file -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
